@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>PS.Build.NSwag</id>
+		<version>$version$</version>
+		<authors>Shkolka Vladimir</authors>
+    <owners>Shkolka Vladimir</owners>
+    <projectUrl>https://github.com/BlackGad/PS.Build.NSwag</projectUrl>
+    <licenseUrl>https://github.com/BlackGad/PS.Build.NSwag/blob/master/LICENSE</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Helpful tools to generate C# web clients by swagger document with NSwag toolchain using PS.Build.Tasks</description>
+		<releaseNotes/>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="10.0.3" />
+      <dependency id="NJsonSchema" version="9.4.2"  />
+      <dependency id="NJsonSchema.CodeGeneration" version="9.4.2" />
+      <dependency id="NJsonSchema.CodeGeneration.CSharp" version="9.4.2" />
+      <dependency id="NSwag.CodeGeneration" version="11.3.3" />
+      <dependency id="NSwag.CodeGeneration.CSharp" version="11.3.3" />
+      <dependency id="NSwag.Core" version="11.3.3" />
+    </dependencies>
+		<references>
+			<reference file="PS.Build.NSwag.dll"/>
+		</references>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.ComponentModel.DataAnnotations"  />
+      <frameworkAssembly assemblyName="System.Runtime.Serialization"  />
+    </frameworkAssemblies>
+	</metadata>
+	<files>
+		<file src="..\..\PS.Build.NSwag\bin\Release\PS.Build.NSwag.dll" target="lib\net45" />
+	</files>
+</package>
